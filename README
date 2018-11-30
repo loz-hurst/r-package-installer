@@ -1,4 +1,6 @@
-# r-package-installer
+r-package-installer
+===================
+
 Shell script to install user-local R packages with no interactive configuration - just give it a list of packages on the command line
 
 Sanity checks the package names against a regex for valid R names and ensures that the user's default R install directoy exists.
