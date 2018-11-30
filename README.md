@@ -1,2 +1,7 @@
 # r-package-installer
 Shell script to install user-local R packages with no interactive configuration - just give it a list of packages on the command line
+
+Sanity checks the package names against a regex for valid R names and ensures that the user's default R install directoy exists.
+
+Was created to be used with sudo, to allow a specific user to install R packages into the home space of an unprivaledged service user that a Shiny websever runs as without allowing them to directly run arbitary commands (R or otherwise) as the service user.
+
